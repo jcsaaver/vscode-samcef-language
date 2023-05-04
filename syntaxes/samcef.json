@@ -26,19 +26,24 @@
       "name": "comment.samcef"
     },
     {
+      "comment": "Markers",
+      "match": "^.[\\w\\d_]+\\s+&",
+      "name": "comment.samcef"
+    },
+    {
       "comment": "Commands not starting with a dot",
       "match": "\\b(ABRE|abre|ASSI|assi|BAND|band|CLOC|cloc|CLOSE|close|DRAF|draf|ECHO|echo|EDIT|edit|EVAL|eval|EXIT|exit|GRAP|grap|HELP|help|PALE|pale|PICK|pick|PLOT|plot|INPU|inpu|MODE|mode|RETU|retu|SETP|setp|SHOW|show|SYST|syst|TITR|titr|VI|vi|WAIT|wait)\\w*\\b",
-      "name": "meta.require.samcef"
+      "name": "keyword.samcef"
     },
     {
       "comment": "Commands starting with a dot",
       "match": "^\\.\\w\\w\\w+",
-      "name": "meta.require.samcef"
+      "name": "keyword.samcef"
     },
     {
       "comment": "#INQ command",
       "match": "#(INQ|inq)\\w*",
-      "name": "meta.require.samcef"
+      "name": "keyword.samcef"
     },
     {
       "comment": "Strings between \"...\"",
@@ -62,13 +67,13 @@
     },
     {
       "comment": "Maths functions",
-      "match": "(SIN|sin|COS|cos|TAN|tan|ASIN|asin|ACOS|acos|ATAN|atan|LOG|log|LN|ln|ABS|abs|INT|int|SQR|sqr|MIN|min|MAX|max|MOD|mod|SIGN|sign|EXP|exp)(?=\\()",
+      "match": "(SIN|sin|COS|cos|TAN|tan|ASIN|asin|ACOS|acos|ATAN|atan|LOG|log|LN|ln|ABS|abs|INT|int|SQR|sqr|SQRT|sqrt|MIN|min|MAX|max|MOD|mod|SIGN|sign|EXP|exp)(?=\\()",
       "name": "keyword.samcef"
     },
     {
       "comment": "Maths constants",
       "match": "\\b(PI|pi)\\b",
-      "name": "keyword.samcef"
+      "name": "constant.numeric.float.samcef"
     },
     {
       "comment": "Logical expressions",
